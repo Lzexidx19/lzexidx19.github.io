@@ -1,0 +1,1594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Foody Hub personal project by PGM</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="page-wrapper">
+    <header>
+        <div id="navbar" class="navbar-wrapper">
+            <div class="navbar-container">
+                <a href="#top-wrapper">
+                    <div class="navlogo-container">
+                        <p class="foody">Foody</p>
+                        <p class="hub">PH</p>
+                    </div>
+                </a>
+                <div class="nav-mid-content">
+                    <ul>
+                        <a href="#bestsale"><li>Best Sale</li></a>
+                        <a href="#alltimefave"><li>All-Time-Favorites</li></a>
+                        <a href="#bundles"><li>Bundles</li></a>
+                        <a href="#contact"><li>Contact Us</li></a>
+                    </ul>
+                </div>
+                <div class="nav-right-content">
+                   <p>Cart</p>
+                   <i id="navCartIcon" class="fa-solid fa-cart-shopping nav-cart" style="color: rgb(239, 239, 6);"></i>
+                   <div class="cartcount-container">
+                    <span class="cart-count" id="cartcount">0</span>
+                   </div>
+                   <div id="cartEmptyNotif" class="cart-empty-notif">
+                    <p>Your cart is empty</p>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="top-wrapper" id="top-wrapper">
+        <div class="top-container hidden">
+            <div class="top-imgcon">
+                <img src="images/topbg.png" alt="" class="top-bg">
+                <img src="images/bev1.png" alt="" class="drink">
+            </div>  
+        </div>
+        <div class="top-deetscon hidden">
+            <h1>Foody <a href="">PH</a></h1>
+            
+        </div>
+    </section>
+    <section class="product-wrapper">
+        <div class="product-container">
+            <div class="product-title">
+                <h1 class="ft-jap">Featuring</h1>
+                <h1 class="offer"><a>JAPANESE DISHES!</a></h1>
+            </div>
+            <div class="product-list-container">
+                <div class="banner"
+                data-aos="fade-down"
+                data-aos-delay="600"
+                data-aos-duration="700"
+                style="background: url('images/item-obento.webp');">
+                </div>
+                <div class="product-list">
+                    <ul 
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                    data-aos-duration="700"
+                    >
+                        <li class="active"
+                        data-img = "images/item-obento.webp">
+                            <div class="product-img imgSrc"
+                            style="background-image: url('images/item-obento.webp');">
+                            <img class="imgSrc" src="images/item-obento.webp" alt="">
+                            </div>
+                            <div class="product-details  item-oncart">
+                                <p class="product-name">BENTO BOX</p>
+                                <p class="product-price cart-price">₱995.00</p>
+                                <p class="jap-list">Udon Obento</p>
+                                <p class="jap-list">Tempura Obento</p>
+                                <p class="jap-list">Sushi Obento</p>
+                            </div>
+                            <button class="btn-cart addcart-btn top-btn top-cart">Add to cart
+                                <i class="fa-solid fa-cart-shopping jap-cart"></i>
+                            </button>
+                        </li>
+                        <li 
+                        data-img = "images/item-tempura.webp">
+                            <div class="product-img imgSrc"
+                            style="background-image: url('images/item-tempura.webp');">
+                            <img class="imgSrc" src="images/item-tempura.webp" alt="">
+                            </div>
+                            <div class="product-details item-oncart">
+                                <p class="product-name">TEMPURA</p>
+                                <p class="product-price cart-price">₱470.00</p>
+                                <p class="jap-list">Classic Tempura</p>
+                                <p class="jap-list">Calammari</p>
+                            </div>
+                            <button class="btn-cart addcart-btn top-btn top-cart">Add to cart
+                                <i class="fa-solid fa-cart-shopping jap-cart"></i>
+                            </button>
+                        </li>
+                        <li
+                        data-img = "images/item-yakitori.webp">
+                            <div class="product-img imgSrc"
+                            style="background-image: url('images/item-yakitori.webp');">
+                            <img class="imgSrc" src="images/item-yakitori.webp" alt="">
+                            </div>
+                            <div class="product-details item-oncart">
+                                <p class="product-name">YAKITORI</p>
+                                <p class="product-price cart-price">₱230.00</p>
+                                <p class="jap-list">3 Sticks Yakitori</p>
+                                <p class="jap-list">Dips: Yakitori Sauce, Teriyaki Sauce</p>
+                            </div>
+                            <button class="btn-cart addcart-btn top-btn top-cart">Add to cart
+                                <i class="fa-solid fa-cart-shopping jap-cart"></i>
+                            </button>
+                        </li>
+                        <li
+                        data-img = "images/item-takoyaki.webp">
+                            <div class="product-img"
+                            style="background-image: url('images/item-takoyaki.webp');">
+                            <img class="imgSrc" src="images/item-takoyaki.webp" alt="">
+                            </div>
+                            <div class="product-details item-oncart">
+                                <p class="product-name">TAKOYAKI</p>
+                                <p class="product-price cart-price">₱200.00</p>
+                                <p class="jap-list">8pcs Takoyaki</p>
+                            </div>
+                            <button class="btn-cart addcart-btn top-btn top-cart">Add to cart
+                                <i class="fa-solid fa-cart-shopping jap-cart"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bestsale-wrapper" id="bestsale"
+    data-aos="fade-up"
+    data-aos-delay="600"
+    data-aos-duration="700">
+        <div class="bestsale-title"
+        data-aos="fade-down"
+        data-aos-delay="600"
+        data-aos-duration="700">
+            <p>Best <a class="sales">SALES!</a></p>
+        </div>
+        <div class="bestsale-container">
+            <div class="bestsale-content">
+                <div class="bs-imgcon">
+                    <img class="imgSrc" src="images/bs-cheesy-sandwich.webp" alt="">
+                </div>
+                <div class="bs-deetscon item-oncart">
+                    <span class="bs-name cart-title">Cheesy Vegetable Sandwich</span>
+                    <p class="bs-price cart-price">₱85.00</p>
+                    <p class="bs-info">2 packs</p>
+                </div>
+                <div class="bs-btncon">
+                    <button class="btn-cart addcart-btn">Add to cart
+                        <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="bestsale-content">
+                <div class="bs-imgcon">
+                    <img class="imgSrc" src="images/bs-tarte.webp" alt="">
+                </div>
+                <div class="bs-deetscon item-oncart">
+                    <span class="bs-name cart-title">Butternuts Squash Tarte</span>
+                    <p class="bs-price cart-price">₱170.00</p>
+                    <p class="bs-info">5 pieces</p>
+                </div>
+                <div class="bs-btncon">
+                    <button class="btn-cart addcart-btn">Add to cart
+                        <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="bestsale-content">
+                <div class="bs-imgcon">
+                    <img class="imgSrc" src="images/bs-sausage.webp" alt="">
+                </div>
+                <div class="bs-deetscon item-oncart">
+                    <span class="bs-name cart-title">Sausage Stuffed</span>
+                    <p class="bs-price cart-price">₱150.00</p>
+                    <p class="bs-info">10 pieces</p>
+                </div>
+                <div class="bs-btncon">
+                    <button class="btn-cart addcart-btn">Add to cart
+                        <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="bestsale-content">
+                <div class="bs-imgcon">
+                    <img class="imgSrc" src="images/bs-shredded-taco.webp" alt="">
+                </div>
+                <div class="bs-deetscon item-oncart">
+                    <span class="bs-name cart-title">Shredded Tofu Taco</span>
+                    <p class="bs-price cart-price">₱75.00</p>
+                    <p  class="bs-info">1 piece</p>
+                </div>
+                <div class="bs-btncon">
+                    <button class="btn-cart addcart-btn">Add to cart
+                        <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="bestsale-content">
+                <div class="bs-imgcon">
+                    <img class="imgSrc" src="images/bs-choco-cake.webp" alt="">
+                </div>
+                <div class="bs-deetscon item-oncart">
+                    <span class="bs-name cart-title">Dark Chocolate Cake</span>
+                    <p class="bs-price cart-price">₱95.00</p>
+                    <p  class="bs-info">1 piece</p>
+                </div>
+                <div class="bs-btncon">
+                    <button class="btn-cart addcart-btn">Add to cart
+                        <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="bestsale-content">
+                <div class="bs-imgcon">
+                    <img class="imgSrc" src="images/bs-presto.webp" alt="">
+                </div>
+                <div class="bs-deetscon item-oncart">
+                    <span class="bs-name cart-title">Pesto Proscuitto Sandwich</span>
+                    <p class="bs-price cart-price">₱50.00</p>
+                    <p  class="bs-info">1 piece</p>
+                </div>
+                <div class="bs-btncon">
+                    <button class="btn-cart addcart-btn">Add to cart
+                        <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="bestsale-content">
+                <div class="bs-imgcon">
+                    <img class="imgSrc" src="images/bs-figsmoothie.webp" alt="">
+                </div>
+                <div class="bs-deetscon item-oncart">
+                    <span class="bs-name cart-title">Vanilla Fig Smoothie</span>
+                    <p class="bs-price cart-price">₱85.00</p>
+                    <p  class="bs-info">Only 1 available cup size "Regular"</p>
+                </div>
+                <div class="bs-btncon">
+                    <button class="btn-cart addcart-btn">Add to cart
+                        <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="bestsale-content">
+                <div class="bs-imgcon">
+                    <img class="imgSrc" src="images/bs-veg-lasagna.webp" alt="">
+                </div>
+                <div class="bs-deetscon item-oncart">
+                    <span class="bs-name cart-title">Vegan Lasagna</span>
+                    <p class="bs-price cart-price">₱205.00</p>
+                    <p  class="bs-info">1 small container</p>
+                </div>
+                <div class="bs-btncon">
+                    <button class="btn-cart addcart-btn">Add to cart
+                        <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="atf-wrapper" id="alltimefave">
+        <div class="atf-title"
+            data-aos="fade-down"
+            data-aos-delay="600"
+            data-aos-duration="700">
+            <h1>All Time <a class="favorites">FAVORITES!</a></h1>
+        </div>
+        <div class="atf-thumbnail-container">
+            <i class="fa-solid fa-angle-left atf-prev" id="prev"
+            data-aos="fade-right"
+            data-aos-delay="600"
+            data-aos-duration="700">
+        </i>
+        <div class="atf-container"
+            data-aos="fade-up"
+            data-aos-delay="600"
+            data-aos-duration="700">
+            <div class="atf-content atfActive target" id="target1">
+                <div class="atf-imgcon">
+                    <img src="images/atf-fastfood.jpg" alt="" draggable="false">
+                    <p>Fast Foods</p>
+                </div>
+            </div>
+            <div class="atf-content target" id="target2">
+                <div class="atf-imgcon">
+                    <img src="images/beverages.webp" alt="" draggable="false">
+                    <p>Beverages</p>
+                </div>
+            </div>
+            <div class="atf-content target" id="target3">
+                <div class="atf-imgcon">
+                    <img src="images/atf-dessert.jpeg" alt="" draggable="false">
+                    <p>Desserts</p>
+                </div>
+            </div>
+            <div class="atf-content target" id="target4">
+                <div class="atf-imgcon">
+                    <img src="images/atf-asian.webp" alt="" draggable="false">
+                    <p>Asian Cuisines</p>
+                </div>
+            </div>
+            <div class="atf-content target" id="target5">
+                <div class="atf-imgcon">
+                    <img src="images/atf-seafoods.jpg" alt="" draggable="false">
+                    <p>Sea Foods</p>
+                </div>
+            </div>
+            <div class="atf-content target" id="target6">
+                <div class="atf-imgcon">
+                    <img src="images/atf-grilled.webp" alt="" draggable="false">
+                    <p>Grilled</p>
+                </div>
+            </div>
+        </div>
+        <i class="fa-solid fa-angle-right atf-next" id="next"
+            data-aos="fade-left"
+            data-aos-delay="600"
+            data-aos-duration="700">
+        </i>
+        </div>
+    </section>
+    <section class="banner-wrapper">
+        <div class="atf-fastfood-wrapper assigned" id="assigned1"
+        data-aos="fade-down"
+        data-aos-delay="600"
+        data-aos-duration="700">
+            <div class="atf-product-container">
+                <div class="atf-product-content">
+                    <div class="atf-product-imgcon">
+                        <img class="imgSrc" src="images/ff-burger.jpg" alt="">
+                    </div>
+                    <div class="atf-product-deetscon item-oncart">
+                        <span>Burger with Fries & Drink</span>
+                        <p class="cart-price">₱150.00</p>
+                        <p>1 burger, 1 regular fries, regular size drink</p>
+                    </div>
+                    <div class="atf-product-btncon">
+                        <button class="atf-cart addcart-btn">Add to cart
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="atf-product-content">
+                    <div class="atf-product-imgcon">
+                        <img class="imgSrc" src="images/ff-corndog.webp" alt="">
+                    </div>
+                    <div class="atf-product-deetscon item-oncart">
+                        <span>Cheezy Corndog</span>
+                        <p class="cart-price">₱70.00</p>
+                        <p>1 piece</p>
+                    </div>
+                    <div class="atf-product-btncon">
+                        <button class="atf-cart addcart-btn">Add to cart
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="atf-product-content">
+                    <div class="atf-product-imgcon">
+                        <img class="imgSrc" src="images/ff-steambun.webp" alt="">
+                    </div>
+                    <div class="atf-product-deetscon item-oncart">
+                        <span>Steam Buns</span>
+                        <p class="cart-price">₱55.00</p>
+                        <p>1 piece</p>
+                    </div>
+                    <div class="atf-product-btncon">
+                        <button class="atf-cart addcart-btn">Add to cart
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="atf-product-content">
+                    <div class="atf-product-imgcon">
+                        <img class="imgSrc" src="images/ff-hotdog.jpg" alt="">
+                    </div>
+                    <div class="atf-product-deetscon item-oncart">
+                        <span>Cheezy Hotdog Sandwich</span>
+                        <p class="cart-price">₱75.00</p>
+                        <p>1 piece</p>
+                    </div>
+                    <div class="atf-product-btncon">
+                        <button class="atf-cart addcart-btn">Add to cart
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="atf-product-content">
+                    <div class="atf-product-imgcon">
+                        <img class="imgSrc" src="images/ff-shawarma.jpg" alt="">
+                    </div>
+                    <div class="atf-product-deetscon item-oncart">
+                        <span>Beff Shawarma</span>
+                        <p class="cart-price">₱85.00</p>
+                        <p>1 piece</p>
+                    </div>
+                    <div class="atf-product-btncon">
+                        <button class="atf-cart addcart-btn">Add to cart
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="atf-product-content">
+                    <div class="atf-product-imgcon">
+                        <img class="imgSrc" src="images/ff-nug.jpg" alt="">
+                    </div>
+                    <div class="atf-product-deetscon item-oncart">
+                        <span>Chicken Nuggets</span>
+                        <p class="cart-price">₱120.00</p>
+                        <p>15 pieces</p>
+                    </div>
+                    <div class="atf-product-btncon">
+                        <button class="atf-cart addcart-btn">Add to cart
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="atf-product-content">
+                    <div class="atf-product-imgcon">
+                        <img class="imgSrc" src="images/ff-chickstrips.jpg" alt="">
+                    </div>
+                    <div class="atf-product-deetscon item-oncart">
+                        <span>Chicken Strips</span>
+                        <p class="cart-price">₱155.00</p>
+                        <p>10 pieces</p>
+                    </div>
+                    <div class="atf-product-btncon">
+                        <button class="atf-cart addcart-btn">Add to cart
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="atf-product-content">
+                    <div class="atf-product-imgcon">
+                        <img class="imgSrc" src="images/ff-calamari.webp" alt="">
+                    </div>
+                    <div class="atf-product-deetscon item-oncart">
+                        <span>Calamari</span>
+                        <p class="cart-price">₱205.00</p>
+                        <p>20 pieces</p>
+                    </div>
+                    <div class="atf-product-btncon">
+                        <button class="atf-cart addcart-btn">Add to cart
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="atf-beverage-wrapper assigned" id="assigned2">
+            <div class="atf-product-container">
+                <div class="atf-product-content">
+                    <div class="atf-product-imgcon">
+                        <img class="imgSrc" src="images/bev-irish-frapcoffee.webp" alt="">
+                    </div>
+                    <div class="atf-product-deetscon item-oncart">
+                        <span>Irish Frap Coffee</span>
+                        <p class="cart-price">₱120.00</p>
+                        <p>Cup size: L/M/S</p>
+                    </div>
+                    <div class="atf-product-btncon">
+                        <button class="atf-cart addcart-btn">Add to cart
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="atf-product-content">
+                    <div class="atf-product-imgcon">
+                        <img class="imgSrc" src="images/bev-icedcoffee.jpg" alt="">
+                    </div>
+                    <div class="atf-product-deetscon item-oncart">
+                        <span>Iced Coffee</span>
+                        <p class="cart-price">₱60.00</p>
+                        <p>Cup size: L/M/S</p>
+                    </div>
+                    <div class="atf-product-btncon">
+                        <button class="atf-cart addcart-btn">Add to cart
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="atf-product-content">
+                    <div class="atf-product-imgcon">
+                        <img class="imgSrc" src="images/bev-yuanyang-coffee.jpg" alt="">
+                    </div>
+                    <div class="atf-product-deetscon item-oncart">
+                        <span>YuanYang Coffee</span>
+                        <p class="cart-price">₱105.00</p>
+                        <p>Cup size: L/M/S</p>
+                    </div>
+                    <div class="atf-product-btncon">
+                        <button class="atf-cart addcart-btn">Add to cart
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="atf-product-content">
+                    <div class="atf-product-imgcon">
+                        <img class="imgSrc" src="images/bev-fruitjuice.avif" alt="">
+                    </div>
+                    <div class="atf-product-deetscon item-oncart">
+                        <span>Fresh Fruit Juice</span>
+                        <p class="cart-price">₱55.00</p>
+                        <p>Cup size: L/M/S</p>
+                    </div>
+                    <div class="atf-product-btncon">
+                        <button class="atf-cart addcart-btn">Add to cart
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="atf-product-content">
+                    <div class="atf-product-imgcon">
+                        <img class="imgSrc" src="images/bev-tarotea.webp" alt="">
+                    </div>
+                    <div class="atf-product-deetscon item-oncart">
+                        <span>Taro Tea</span>
+                        <p class="cart-price">₱75.00</p>
+                        <p>Cup size: L/M/S</p>
+                    </div>
+                    <div class="atf-product-btncon">
+                        <button class="atf-order">Order</button>
+                        <button class="atf-cart addcart-btn">Add to cart
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="atf-product-content">
+                    <div class="atf-product-imgcon">
+                        <img class="imgSrc" src="images/bev-affogato.jpg" alt="">
+                    </div>
+                    <div class="atf-product-deetscon item-oncart">
+                        <span>Affogato</span>
+                        <p class="cart-price">₱75.00</p>
+                        <p>Cup size: L/M/S</p>
+                    </div>
+                    <div class="atf-product-btncon">
+                        <button class="atf-order">Order</button>
+                        <button class="atf-cart addcart-btn">Add to cart
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="atf-product-content">
+                    <div class="atf-product-imgcon">
+                        <img class="imgSrc" src="images/bev-matcha.webp" alt="">
+                    </div>
+                    <div class="atf-product-deetscon item-oncart">
+                        <span>Matcha Tea</span>
+                        <p class="cart-price">₱75.00</p>
+                        <p>Cup size: L/M/S</p>
+                    </div>
+                    <div class="atf-product-btncon">
+                        <button class="atf-order">Order</button>
+                        <button class="atf-cart addcart-btn">Add to cart
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="atf-product-content">
+                    <div class="atf-product-imgcon">
+                        <img class="imgSrc" src="images/bev-thaitea.webp" alt="">
+                    </div>
+                    <div class="atf-product-deetscon item-oncart">
+                        <span>Thai Tea</span>
+                        <p class="cart-price">75.00</p>
+                        <p>Cup size: L/M/S</p>
+                    </div>
+                    <div class="atf-product-btncon">
+                        <button class="atf-order">Order</button>
+                        <button class="atf-cart addcart-btn">Add to cart
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="atf-dessert-wrapper assigned" id="assigned3">
+            <div class="atf-product-container">
+                <div class="atf-product-content">
+                    <div class="atf-product-imgcon">
+                        <img class="imgSrc" src="images/des-japcake.webp" alt="">
+                    </div>
+                    <div class="atf-product-deetscon item-oncart">
+                        <span>Japanese Cake</span>
+                        <p class="cart-price">₱450.00</p>
+                        <p>1 Whole Cake</p>
+                    </div>
+                    <div class="atf-product-btncon">
+                        <button class="atf-order">Order</button>
+                        <button class="atf-cart addcart-btn">Add to cart
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="atf-product-content">
+                    <div class="atf-product-imgcon">
+                        <img class="imgSrc" src="images/des-coconutcake.webp" alt="">
+                    </div>
+                    <div class="atf-product-deetscon item-oncart">
+                        <span>Coconut Cake</span>
+                        <p class="cart-price">₱355.00</p>
+                        <p>1 Whole Cake</p>
+                    </div>
+                    <div class="atf-product-btncon">
+                        <button class="atf-order">Order</button>
+                        <button class="atf-cart addcart-btn">Add to cart
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="atf-product-content">
+                    <div class="atf-product-imgcon">
+                        <img class="imgSrc" src="images/des-blackforestcake.webp" alt="">
+                    </div>
+                    <div class="atf-product-deetscon item-oncart">
+                        <span>Black Forest Cake</span>
+                        <p class="cart-price">₱520.00</p>
+                        <p>1 Whole Cake</p>
+                    </div>
+                    <div class="atf-product-btncon">
+                        <button class="atf-order">Order</button>
+                        <button class="atf-cart addcart-btn">Add to cart
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="atf-product-content">
+                    <div class="atf-product-imgcon">
+                        <img class="imgSrc" src="images/des-apfelstrudel.webp" alt="">
+                    </div>
+                    <div class="atf-product-deetscon item-oncart">
+                        <span>Apfelstrudel</span>
+                        <p class="cart-price">₱55.00</p>
+                        <p>1 slice</p>
+                    </div>
+                    <div class="atf-product-btncon">
+                        <button class="atf-order">Order</button>
+                        <button class="atf-cart addcart-btn">Add to cart
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="atf-product-content">
+                    <div class="atf-product-imgcon">
+                        <img class="imgSrc" src="images/des-alfajores.webp" alt="">
+                    </div>
+                    <div class="atf-product-deetscon item-oncart">
+                        <span>Alfajores</span>
+                        <p class="cart-price">₱165.00</p>
+                        <p>15 pieces</p>
+                    </div>
+                    <div class="atf-product-btncon">
+                        <button class="atf-order">Order</button>
+                        <button class="atf-cart addcart-btn">Add to cart
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="atf-product-content">
+                    <div class="atf-product-imgcon">
+                        <img class="imgSrc" src="images/des-chocomouse.webp" alt="">
+                    </div>
+                    <div class="atf-product-deetscon item-oncart">
+                        <span>Chocolate  Mouse</span>
+                        <p class="cart-price">₱125.00</p>
+                        <p>1 piece</p>
+                    </div>
+                    <div class="atf-product-btncon">
+                        <button class="atf-order">Order</button>
+                        <button class="atf-cart addcart-btn">Add to cart
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="atf-product-content">
+                    <div class="atf-product-imgcon">
+                        <img class="imgSrc" src="images/des-fontant.webp" alt="">
+                    </div>
+                    <div class="atf-product-deetscon item-oncart">
+                        <span>Fontant</span>
+                        <p class="cart-price">145.00</p>
+                        <p>1 piece</p>
+                    </div>
+                    <div class="atf-product-btncon">
+                        <button class="atf-order">Order</button>
+                        <button class="atf-cart addcart-btn">Add to cart
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="atf-product-content">
+                    <div class="atf-product-imgcon">
+                        <img class="imgSrc" src="images/des-gulabjamun.webp" alt="">
+                    </div>
+                    <div class="atf-product-deetscon item-oncart">
+                        <span>Gulab Jamun</span>
+                        <p class="cart-price">100.00</p>
+                        <p>10 pieces</p>
+                    </div>
+                    <div class="atf-product-btncon">
+                        <button class="atf-order">Order</button>
+                        <button class="atf-cart addcart-btn">Add to cart
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="atf-asian-wrapper assigned" id="assigned4">
+            <div class="atf-product-container">
+                <div class="atf-product-content">
+                    <div class="atf-product-imgcon">
+                        <img class="imgSrc" src="images/asian-padkrapow.webp" alt="">
+                    </div>
+                    <div class="atf-product-deetscon item-oncart">
+                        <span>Pad Krapow</span>
+                        <p class="cart-price">₱130.00</p>
+                        <p>1 Serving</p>
+                    </div>
+                    <div class="atf-product-btncon">
+                        <button class="atf-order">Order</button>
+                        <button class="atf-cart addcart-btn">Add to cart
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="atf-product-content">
+                    <div class="atf-product-imgcon">
+                        <img class="imgSrc" src="images/asian-biryani.webp" alt="">
+                    </div>
+                    <div class="atf-product-deetscon item-oncart">
+                        <span>Biryani Chicken</span>
+                        <p class="cart-price">₱355.00</p>
+                        <p>Chicken/Beef</p>
+                    </div>
+                    <div class="atf-product-btncon">
+                        <button class="atf-order">Order</button>
+                        <button class="atf-cart addcart-btn">Add to cart
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="atf-product-content">
+                    <div class="atf-product-imgcon">
+                        <img class="imgSrc" src="images/asian-satay.webp" alt="">
+                    </div>
+                    <div class="atf-product-deetscon item-oncart">
+                        <span>Satay</span>
+                        <p class="cart-price">200.00</p>
+                        <p>8 pieces</p>
+                    </div>
+                    <div class="atf-product-btncon">
+                        <button class="atf-order">Order</button>
+                        <button class="atf-cart addcart-btn">Add to cart
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="atf-product-content">
+                    <div class="atf-product-imgcon">
+                        <img class="imgSrc" src="images/asian-sushi.webp" alt="">
+                    </div>
+                    <div class="atf-product-deetscon item-oncart">
+                        <span>Sushi</span>
+                        <p class="cart-price">₱185.00</p>
+                        <p>7 pieces</p>
+                    </div>
+                    <div class="atf-product-btncon">
+                        <button class="atf-order">Order</button>
+                        <button class="atf-cart addcart-btn">Add to cart
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="atf-product-content">
+                    <div class="atf-product-imgcon">
+                        <img class="imgSrc" src="images/asian-dimsum.webp" alt="">
+                    </div>
+                    <div class="atf-product-deetscon item-oncart">
+                        <span>Chinese Dimsum</span>
+                        <p class="cart-price">₱85.00</p>
+                        <p>2 pieces</p>
+                    </div>
+                    <div class="atf-product-btncon">
+                        <button class="atf-order">Order</button>
+                        <button class="atf-cart addcart-btn">Add to cart
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="atf-product-content">
+                    <div class="atf-product-imgcon">
+                        <img class="imgSrc" src="images/asian-kimchi.webp" alt="">
+                    </div>
+                    <div class="atf-product-deetscon item-oncart">
+                        <span>Kimchi</span>
+                        <p class="cart-price">₱125.00</p>
+                        <p>1 Bottle</p>
+                    </div>
+                    <div class="atf-product-btncon">
+                        <button class="atf-order">Order</button>
+                        <button class="atf-cart addcart-btn">Add to cart
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="atf-product-content">
+                    <div class="atf-product-imgcon">
+                        <img class="imgSrc" src="images/asian-ramen.webp" alt="">
+                    </div>
+                    <div class="atf-product-deetscon item-oncart">
+                        <span>Ramen</span>
+                        <p class="cart-price">175.00</p>
+                        <p>1 Bowl</p>
+                    </div>
+                    <div class="atf-product-btncon">
+                        <button class="atf-order">Order</button>
+                        <button class="atf-cart addcart-btn">Add to cart
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="atf-product-content">
+                    <div class="atf-product-imgcon">
+                        <img class="imgSrc" src="images/asian-pho.webp" alt="">
+                    </div>
+                    <div class="atf-product-deetscon item-oncart">
+                        <span>Pho</span>
+                        <p class="cart-price">100.00</p>
+                        <p>1 Bowl</p>
+                    </div>
+                    <div class="atf-product-btncon">
+                        <button class="atf-order">Order</button>
+                        <button class="atf-cart addcart-btn">Add to cart
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="atf-seafood-wrapper assigned" id="assigned5">
+            <div class="atf-product-container">
+                <div class="atf-product-content">
+                    <div class="atf-product-imgcon">
+                        <img class="imgSrc" src="images/sea-Cioppino.png" alt="">
+                    </div>
+                    <div class="atf-product-deetscon item-oncart">
+                        <span>Cioppino</span>
+                        <p class="cart-price">₱270.00</p>
+                        <p>1 Serving</p>
+                    </div>
+                    <div class="atf-product-btncon">
+                        <button class="atf-order">Order</button>
+                        <button class="atf-cart">Add to cart
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="atf-product-content">
+                    <div class="atf-product-imgcon">
+                        <img class="imgSrc" src="images/sea-Crab-Cakes.png" alt="">
+                    </div>
+                    <div class="atf-product-deetscon item-oncart">
+                        <span>Crab Cakes</span>
+                        <p class="cart-price">₱235.00</p>
+                        <p>8 pieces</p>
+                    </div>
+                    <div class="atf-product-btncon">
+                        <button class="atf-order">Order</button>
+                        <button class="atf-cart addcart-btn">Add to cart
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="atf-product-content">
+                    <div class="atf-product-imgcon">
+                        <img class="imgSrc" src="images/sea-Oysters-Rockefeller.png" alt="">
+                    </div>
+                    <div class="atf-product-deetscon item-oncart">
+                        <span>Oysters Rockefeller</span>
+                        <p class="cart-price">₱375.00</p>
+                        <p>12 pieces</p>
+                    </div>
+                    <div class="atf-product-btncon">
+                        <button class="atf-order">Order</button>
+                        <button class="atf-cart addcart-btn">Add to cart
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="atf-product-content">
+                    <div class="atf-product-imgcon">
+                        <img class="imgSrc" src="images/sea-Clam-Chowder.png" alt="">
+                    </div>
+                    <div class="atf-product-deetscon item-oncart">
+                        <span>Clam Chowder</span>
+                        <p class="cart-price">₱170.00</p>
+                        <p>1 piece</p>
+                    </div>
+                    <div class="atf-product-btncon">
+                        <button class="atf-order">Order</button>
+                        <button class="atf-cart addcart-btn">Add to cart
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="atf-product-content">
+                    <div class="atf-product-imgcon">
+                        <img class="imgSrc" src="images/sea-Fish-Fry.png" alt="">
+                    </div>
+                    <div class="atf-product-deetscon item-oncart">
+                        <span>Pritong Bangus</span>
+                        <p class="cart-price">₱220.00</p>
+                        <p>1 whole fish chopped and fried</p>
+                    </div>
+                    <div class="atf-product-btncon">
+                        <button class="atf-order">Order</button>
+                        <button class="atf-cart addcart-btn">Add to cart
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="atf-product-content">
+                    <div class="atf-product-imgcon">
+                        <img class="imgSrc" src="images/sea-Shrimp-Cocktail.png" alt="">
+                    </div>
+                    <div class="atf-product-deetscon item-oncart">
+                        <span>Shrimp Cocktail</span>
+                        <p>₱187.00</p>
+                        <p>6 Pieces w/ sauce</p>
+                    </div>
+                    <div class="atf-product-btncon">
+                        <button class="atf-order">Order</button>
+                        <button class="atf-cart addcart-btn">Add to cart
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="atf-product-content">
+                    <div class="atf-product-imgcon">
+                        <img class="imgSrc" src="images/sea-Paella.png" alt="">
+                    </div>
+                    <div class="atf-product-deetscon item-oncart">
+                        <span>Paella</span>
+                        <p class="cart-price">235.00</p>
+                        <p>1 Serving</p>
+                    </div>
+                    <div class="atf-product-btncon">
+                        <button class="atf-order">Order</button>
+                        <button class="atf-cart addcart-btn">Add to cart
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="atf-product-content">
+                    <div class="atf-product-imgcon">
+                        <img class="imgSrc" src="images/sea-Fish-Tacos.png" alt="">
+                    </div>
+                    <div class="atf-product-deetscon item-oncart">
+                        <span>Fish Tacos</span>
+                        <p class="cart-price">170.00</p>
+                        <p>2 pieces</p>
+                    </div>
+                    <div class="atf-product-btncon">
+                        <button class="atf-order">Order</button>
+                        <button class="atf-cart addcart-btn">Add to cart
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="atf-grilled-wrapper assigned" id="assigned6">
+            <div class="atf-product-container">
+                <div class="atf-product-content">
+                    <div class="atf-product-imgcon">
+                        <img class="imgSrc" src="images/grill-porkbbq.jpg" alt="">
+                    </div>
+                    <div class="atf-product-deetscon item-oncart">
+                        <span>Pork BBQ</span>
+                        <p class="cart-price">₱250.00</p>
+                        <p>7 Sticks</p>
+                    </div>
+                    <div class="atf-product-btncon">
+                        <button class="atf-order">Order</button>
+                        <button class="atf-cart addcart-btn">Add to cart
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="atf-product-content">
+                    <div class="atf-product-imgcon">
+                        <img class="imgSrc" src="images/grill-chickenbbq.webp" alt="">
+                    </div>
+                    <div class="atf-product-deetscon item-oncart">
+                        <span>Chicken BBQ</span>
+                        <p class="cart-price">170.00</p>
+                        <p>1 piece</p>
+                    </div>
+                    <div class="atf-product-btncon">
+                        <button class="atf-order">Order</button>
+                        <button class="atf-cart addcart-btn">Add to cart
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="atf-product-content">
+                    <div class="atf-product-imgcon">
+                        <img class="imgSrc" src="images/grill-beefbbq.jpg" alt="">
+                    </div>
+                    <div class="atf-product-deetscon item-oncart">
+                        <span>Beef BBQ</span>
+                        <p class="cart-price">₱280.00</p>
+                        <p>7 Sticks</p>
+                    </div>
+                    <div class="atf-product-btncon">
+                        <button class="atf-order">Order</button>
+                        <button class="atf-cart addcart-btn">Add to cart
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="atf-product-content">
+                    <div class="atf-product-imgcon">
+                        <img class="imgSrc" src="images/grill-liempo.avif" alt="">
+                    </div>
+                    <div class="atf-product-deetscon item-oncart">
+                        <span>Liempo</span>
+                        <p class="cart-price">₱260.00</p>
+                        <p>1 Slice of liempo</p>
+                    </div>
+                    <div class="atf-product-btncon">
+                        <button class="atf-order">Order</button>
+                        <button class="atf-cart addcart-btn">Add to cart
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="atf-product-content">
+                    <div class="atf-product-imgcon">
+                        <img class="imgSrc" src="images/grill-tofu.jpg" alt="">
+                    </div>
+                    <div class="atf-product-deetscon item-oncart">
+                        <span>Grilled Tofu</span>
+                        <p class="cart-price">₱230.00</p>
+                        <p>1 Serving</p>
+                    </div>
+                    <div class="atf-product-btncon">
+                        <button class="atf-order">Order</button>
+                        <button class="atf-cart addcart-btn">Add to cart
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="atf-product-content">
+                    <div class="atf-product-imgcon">
+                        <img class="imgSrc" src="images/grill-fishfillet.webp" alt="">
+                    </div>
+                    <div class="atf-product-deetscon item-oncart">
+                        <span>Grilled Fish Fillet</span>
+                        <p class="cart-price">₱190.00</p>
+                        <p>4 Pieces</p>
+                    </div>
+                    <div class="atf-product-btncon">
+                        <button class="atf-order">Order</button>
+                        <button class="atf-cart addcart-btn">Add to cart
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="atf-product-content">
+                    <div class="atf-product-imgcon">
+                        <img class="imgSrc" src="images/grill-bangus.jpg" alt="">
+                    </div>
+                    <div class="atf-product-deetscon item-oncart">
+                        <span> Filipino Grilled Bangus</span>
+                        <p class="cart-price">₱275.00</p>
+                        <p>1 Whole Fish</p>
+                    </div>
+                    <div class="atf-product-btncon">
+                        <button class="atf-order">Order</button>
+                        <button class="atf-cart addcart-btn">Add to cart
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="atf-product-content">
+                    <div class="atf-product-imgcon">
+                        <img class="imgSrc" src="images/grill-calamari.jpg" alt="">
+                    </div>
+                    <div class="atf-product-deetscon item-oncart">
+                        <span>Spicy Grilled Calamari</span>
+                        <p class="cart-price">₱240.00</p>
+                        <p>7 Sticks</p>
+                    </div>
+                    <div class="atf-product-btncon">
+                        <button class="atf-order">Order</button>
+                        <button class="atf-cart addcart-btn">Add to cart
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bundles-wrapper" id="bundles"
+            data-aos="fade-down"
+            data-aos-delay="600"
+            data-aos-duration="700">
+        <div class="bundles-title">
+            <h1>Pick your own choice of <a class="bundletxt">BUNDLES!</a></h1>
+        </div>
+        <i class="fa-solid fa-angle-left bundles-prev" id="bunprev"
+            data-aos="fade-right"
+            data-aos-delay="600"
+            data-aos-duration="700">
+        </i>
+        <div class="bundles-container">
+            <div class="bundles-content" id="bunContent1">
+                <div class="bundles-imgcon" id="bunImgCon">
+                  <img class="imgSrc" src="images/bun-friedbundle.avif" alt="">
+                </div>
+                <div class="bundles-deetscon item-oncart">  
+                    <span class="cart-title">Fried BUNDLE</span>
+                    <p class="cart-price" id="productPrice1">550.00</p>
+                    <p>1 Bucket Fried Chicken</p>
+                    <p>15 pieces Tempura</p>
+                    <p>1 Serving of Tofu Salad</p>
+                    <p>3 large size fries</p>
+                    <p>2 Dips</p>
+                </div>
+                <button  id="bunRemove" class="bunrem">remove</button>
+                <div class="bundles-inpcon" id="bunInpCon">
+                    <div class="bun-qtycon">
+                        <p>Quantity:</p>
+                        <input type="number" class="cart-qty" value="1">
+                    </div>
+                    <div class="bun-total">
+                        <p class="cart-totalprice">Total Amount</p>
+                        <p id="cartTotalAmount1" class="cartTotalAmount1 puta"></p>
+                    </div>
+                </div>
+                <div class="bundles-btncon">
+                    <button id="orderBtn1" class="orderBtn bundles-btnorder">Order</button>
+                    <button class="addcart-btn bundles-btncart" id="cartBtn1">Add to cart 
+                        <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="bundles-content" id="bunContent2">
+                <div class="bundles-imgcon">
+                    <img class="imgSrc" src="images/bun-burgerbundle.jpeg" alt="" draggable="false">
+                </div>
+                <div class="bundles-deetscon item-oncart">
+                    <span class="cart-title">Burger BUNDLE</span>
+                    <p class="cart-price" >320.00</p>
+                    <p>4 Cheezy Burger</p>
+                    <p>1 XL fries</p>
+                    <p>3 Oreo Shake</p>
+                </div>
+                <button  id="bunRemove" class="bunrem">remove</button>
+                <div class="bundles-inpcon">
+                    <div class="bun-qtycon">
+                        <p>Quantity:</p>
+                        <input type="number" class="cart-qty" value="1">
+                    </div>
+                    <div class="bun-total">
+                        <p class="cart-totalprice">Total Amount</p>
+                        <p id="cartTotalAmount2" class="cartTotalAmount2 puta"></p>
+                    </div>
+                </div>
+                <div class="bundles-btncon">
+                    <button id="orderBtn" class="orderBtn bundles-btnorder">Order</button>
+                    <button class="addcart-btn bundles-btncart" id="cartBtn2">Add to cart 
+                        <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="bundles-content">
+                <div class="bundles-imgcon">
+                    <img class="imgSrc" src="images/bun-pizzabundle.avif" alt="" draggable="false">
+                </div>
+                <div class="bundles-deetscon item-oncart">
+                    <span class="cart-title">Vegetable Pizza BUNDLE</span>
+                    <p class="cart-price">680.00</p>
+                    <p>1 family size pizza</p>
+                    <p>1 bucket fried chicken</p>
+                    <p>5 hush browns</p>
+                </div>
+                <button  id="bunRemove" class="bunrem">remove</button>
+                <div class="bundles-inpcon" id="bunInpCon">
+                    <div class="bun-qtycon">
+                        <p>Quantity:</p>
+                        <input type="number" class="cart-qty" value="">
+                    </div>
+                    <div class="bun-total">
+                        <p class="cart-totalprice">Total Amount</p>
+                        <p id="ctp3" class="cartTotalAmount3 puta"></p>
+                    </div>
+                </div>
+                <div class="bundles-btncon">
+                    <button id="orderBtn" class="orderBtn bundles-btnorder">Order</button>
+                    <button class="addcart-btn bundles-btncart">Add to cart 
+                        <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="bundles-content">
+                <div class="bundles-imgcon">
+                    <img class="imgSrc" src="images/bun-lechonbundle.jpg" alt="" draggable="false">
+                </div>
+                <div class="bundles-deetscon item-oncart">
+                    <span class="cart-title">Lechon BUNDLE</span>
+                    <p class="cart-price">980.00</p>
+                    <p>1kg Lechon</p>
+                    <p>5 sticks pork bbq</p>
+                    <p>1 serving of pancit</p>
+                </div>
+                <button  id="bunRemove" class="bunrem">remove</button>
+                <div class="bundles-inpcon" id="bunInpCon">
+                    <div class="bun-qtycon">
+                        <p>Quantity:</p>
+                        <input type="number" class="cart-qty" value="0">
+                    </div>
+                    <div class="bun-total">
+                        <p class="cart-totalprice">Total Amount</p>
+                        <p id="cartTotalAmount" class="cartTotalAmount4 puta"></p>
+                    </div>
+                </div>
+                <div class="bundles-btncon">
+                    <button id="orderBtn" class="orderBtn bundles-btnorder">Order</button>
+                    <button class="addcart-btn bundles-btncart">Add to cart 
+                        <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="bundles-content">
+                <div class="bundles-imgcon">
+                    <img class="imgSrc" src="images/bun-shawarmabundle.jpg" alt="" draggable="false">
+                </div>
+                <div class="bundles-deetscon item-oncart">
+                    <span class="cart-title">Shawarma BUNDLE</span>
+                    <p class="cart-price">980.00</p>
+                    <p>6 Spicy Shawarma</p>
+                    <p>1 Large fries</p>
+                    <p>3 Large size drinks</p>
+                </div>
+                <button  id="bunRemove" class="bunrem">remove</button>
+                <div class="bundles-inpcon" id="bunInpCon">
+                    <div class="bun-qtycon">
+                        <p>Quantity:</p>
+                        <input type="number" class="cart-qty" value="0">
+                    </div>
+                    <div class="bun-total">
+                        <p class="cart-totalprice">Total Amount</p>
+                        <p id="cartTotalAmount5" class="cartTotalAmount5 puta"></p>
+                    </div>
+                </div>
+                <div class="bundles-btncon">
+                    <button id="orderBtn" class="orderBtn bundles-btnorder">Order</button>
+                    <button class="addcart-btn bundles-btncart">Add to cart 
+                        <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="bundles-content">
+                <div class="bundles-imgcon">
+                    <img class="imgSrc" src="images/bun-inasalbundle.webp" alt="" draggable="false">
+                </div>
+                <div class="bundles-deetscon item-oncart">
+                    <span class="cart-title">Grilled BUNDLE</span>
+                    <p class="cart-price">1050.00</p>
+                    <p>4 Spicy chicken</p>
+                    <p>4 Slice of liempo</p>
+                    <p>4 Large size drinks</p>
+                    <p>Family size java rice</p>
+                </div>
+                <button  id="bunRemove" class="bunrem">remove</button>
+                <div class="bundles-inpcon" id="bunInpCon">
+                    <div class="bun-qtycon">
+                        <p>Quantity:</p>
+                        <input type="number" class="cart-qty" value="0">
+                    </div>
+                    <div class="bun-total">
+                        <p class="cart-totalprice">Total Amount</p>
+                        <p id="cartTotalAmount6" class="cartTotalAmount6 puta"></p>
+                    </div>
+                </div>
+                <div class="bundles-btncon">
+                    <button id="orderBtn" class="orderBtn bundles-btnorder">Order</button>
+                    <button class="addcart-btn bundles-btncart">Add to cart 
+                        <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <i class="fa-solid fa-angle-right bundles-next" id="bunnext"
+            data-aos="fade-left"
+            data-aos-delay="600"
+            data-aos-duration="700">
+        </i>
+    </section>
+    <section class="footer-wrapper" id="contact"
+            data-aos="fade-down"
+            data-aos-delay="600"
+            data-aos-duration="700">
+        <div class="footer-container">
+            <div class="footer-bar">
+                <div class="footer-accounts">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <i class="fa-brands fa-viber"></i>
+                    <i class="fa-brands fa-google"></i>
+                </div>
+            </div>
+            <div class="footer-content-wrapper">
+                <div class="footer-content">
+                    <ul>
+                        <li>© 2023 FoodyHUB</li>
+                        <li class="paul">Hi I'm Paul aspiring web developer this is my first own personal project.</li>  
+                    </ul>
+                </div>
+                <div class="footer-content">
+                    <ul class="content1">
+                        <li><a href="">About</a></li>
+                        <li><a href="">Press</a></li>
+                        <li><a href="">Help Center</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Terms and Conditions</a></li> 
+                        <li><a href="">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-content">
+                    <ul class="content1">
+                        <li><a href="">About</a></li>
+                        <li><a href="">Press</a></li>
+                        <li><a href="">Help Center</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Terms and Conditions</a></li> 
+                        <li><a href="">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-content">
+                    <ul class="content1">
+                        <li><a href="">About</a></li>
+                        <li><a href="">Press</a></li>
+                        <li><a href="">Help Center</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Terms and Conditions</a></li> 
+                        <li><a href="">Privacy Policy</a></li>
+                    </ul>
+                </div> 
+            </div>
+        </div>
+    </section>
+    <section class="order-popup-wrapper" id="orderPage">
+        <div class="order-popup-container">
+            <div class="order-popup-content">
+                <div class="order-deetscon">
+                    <p>Qty:</p>
+                    <input type="number" name="" id="orderQty"  class="order-qty orderQty">
+                    <p>Name:</p>
+                    <input type="text" placeholder="Input your Name here" class="order-inp">
+                    <p>Delivery Address</p>
+                    <input type="text" placeholder="Input your Address here" class="order-inp">
+                    <p>Contact Number</p>
+                    <input type="text" placeholder="Input your Contact Number here" class="order-inp">
+                    <p class="order-total" id="totalAmount">Total Amount: </p>
+                </div>
+                <div class="order-paycon">
+                    <p>Pay using:</p>
+                    <div class="paycon-btncon">
+                        <select name="" id="">
+                            <option value="">Bank</option>
+                            <option value="">Gcash</option>
+                            <option value="">Bank</option>
+                            <option value="">PayMaya</option>
+                        </select>
+                        <input type="text" class="paycon-inp" placeholder="Enter account number">
+                        <button id="submitBtn" class="submit-btn">Proceed</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cart-popup-wrapper cartPage" id="cartPage">
+        <div class="cart-popup-container">
+            <i class="fa-solid fa-xmark cart-close"></i>
+            <i class="fa-solid fa-xmark cart-close-mobile"></i>
+            <div class="cart-thankyou-page">
+                <h1>Thankyou for your orders!</h1>
+            </div>
+            <div class="cart-popup-content">
+                <div class="cart-items" id="cartItems">
+                    <div class="oncart-paypage">
+                        <div id="payPageOncart" class="cart-paypage-oncart">
+                            
+                            <!-- ang magiging laman nito is yung iaadd to cart mong putang ina ka -->
+                            </div>
+                            <div class="paypage-totalcon">
+                                <div class="paypage-totalcon-btn">
+                                    <button class="cart-shopmore-btn shopMore">Shop More</button>
+                                    <button class="cart-shopmore-btn-mobile shopMoreMobile">Shop More</button>
+                                </div>
+                              <div class="paypage-totalcon-sum">
+                                <p id="totaltxt" class="totaltxt">Total:</p>
+                                <p class="cart-total-amount">₱</p>
+                            </div>
+                          </div>
+                    </div>
+                  <div class="cart-paypage-wrapper">
+                    <div class="cart-popup-paypage cartPayPage">
+                        
+                        <div id="payPageUserInfo" class="cart-paypage-userinfo paypage-content">
+                            <h1>Billing Address</h1>
+                            <p>
+                                <i class="fa-solid fa-user"></i> Full Name
+                            </p>
+                            <input id="inpName" class="inp-name inpName inputText" type="text" placeholder="FirstName, LastName" onkeyup="capitalizeAllInputs()">
+                            <i class="fa-solid fa-circle-exclamation fa-bounce input-alert1" style="color: #ce0303;"></i>
+                            <p>
+                                <i class="fa-solid fa-envelope"></i> Email
+                            </p>
+                            <input id="inpEmail" type="email" placeholder="frontEndDev12@gmail.com">
+                            <i class="fa-solid fa-circle-exclamation fa-bounce input-alert2" style="color: #ce0303;"></i>
+                            <p>
+                                <i class="fa-solid fa-location-dot"></i>Province
+                            </p>
+                            <input id="inpAddress" class="inputText" type="text" placeholder="Pangasinan" onkeyup="capitalizeAllInputs()">
+                            <i class="fa-solid fa-circle-exclamation fa-bounce input-alert3" style="color: #ce0303;"></i>
+                            <p>
+                                <i class="fa-solid fa-building"></i>City
+                            </p>
+                            <input id="inpCity" class="inputText" type="text" placeholder="Santo Tomas" onkeyup="capitalizeAllInputs()">
+                            <i class="fa-solid fa-circle-exclamation fa-bounce input-alert4" style="color: #ce0303;"></i>
+                            <div class="brgy-zip">
+                                <div class="brgy">
+                                    <p>Brgy</p>
+                                    <input id="inpBrgy" class="inputText" type="text" placeholder="Santo Domingo" onkeyup="capitalizeAllInputs()">
+                                    <i class="fa-solid fa-circle-exclamation fa-bounce input-alert5" style="color: #ce0303;"></i>
+                                </div>
+                                <div class="zip">
+                                    <p>Zip</p>
+                                    <input id="inpZip" type="text" placeholder="2426">
+                                    <i class="fa-solid fa-circle-exclamation fa-bounce input-alert6" style="color: #ce0303;"></i>
+                                </div>
+                            </div>
+                            <button id="payPageSubmit" class="paypage-submit-btn">Submit</button>
+                            <button id="payPageEdit" class="paypage-edit-btn">Edit</button>
+                        </div>
+                        <div id="payPagePayMeth" class="cart-paypage-compute paypage-content">
+                            <h1>Payment</h1>
+                            <div class="payment-method">
+                                <p>Select Payment Method</p>
+                                <select name="" id="paymentMethod">
+                                    <option id="onlinePay" value="onlinePay">Online Payment</option>
+                                    <option id="COD" value="COD">Cash On Delivery</option>
+                                </select>
+                            </div>
+                            
+                            <hr>
+                            <div class="payment-online">
+                                <div id="onlinePayment" class="online-payment">
+                                    <p>Select Bank/E-Wallet</p>
+                                    <select name="" id="bankWallet">
+                                        <option value="">Select Payment</option>
+                                        <option value="bank">Banco De Oro</option>
+                                        <option value="bank">Bank of the Philippines</option>
+                                        <option value="ewallet">G-cash</option>
+                                    </select>
+                                    <div id="bankOption" class="bank-option">
+                                        <p>Name on Card</p>
+                                            <input id="inpNameOnCard" class="inputText" type="text" placeholder="First Name, Last Name" onkeyup="capitalizeAllInputs()">
+                                            <i class="fa-solid fa-circle-exclamation fa-bounce input-alert10" style="color: #ce0303;"></i>
+                                            <p>Card Number</p>
+                                            <input id="inpCardNumber" type="text" placeholder="1111-2222-3333-4444" onkeypress="return isNumber(event)" required>
+                                            <i class="fa-solid fa-circle-exclamation fa-bounce input-alert11" style="color: #ce0303;"></i>
+                                            <p>Expiry Month</p>
+                                            <select name="" id="">
+                                                <option value="">January</option>
+                                                <option value="">February</option>
+                                                <option value="">March</option>
+                                                <option value="">April</option>
+                                                <option value="">May</option>
+                                                <option value="">June</option>
+                                                <option value="">July</option>
+                                                <option value="">August</option>
+                                                <option value="">September</option>
+                                                <option value="">October</option>
+                                                <option value="">November</option>
+                                                <option value="">December</option>
+                                            </select>
+                                        <div class="year-cvv" onkeypress="return isNumberCvv(event)" required>
+                                            <i class="fa-solid fa-circle-exclamation fa-bounce input-alert1" style="color: #ce0303;"></i>
+                                            <div class="exp-year">  
+                                                <p>Expiry Year</p>
+                                                    <select name="" id="">
+                                                        <option value="">2030</option>
+                                                        <option value="">2029</option>
+                                                        <option value="">2028</option>
+                                                        <option value="">2027</option>
+                                                        <option value="">2026</option>
+                                                        <option value="">2025</option>
+                                                        <option value="">2024</option>
+                                                    </select>
+                                            </div>
+                                            <div class="cvv">
+                                                <p>CVV</p>
+                                                    <input id="inpCvv" type="text" placeholder="419">
+                                                    <i class="fa-solid fa-circle-exclamation fa-bounce input-alert12" style="color: #ce0303;"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="ewalletOption" class="ewallet-option">
+                                        <p>Account Name</p>
+                                            <input id="inpEwalletAccName" class="inputText" type="text" placeholder="First Name, Last Name" onkeyup="capitalizeAllInputs()">
+                                            <i class="fa-solid fa-circle-exclamation fa-bounce input-alert13" style="color: #ce0303;"></i>
+                                            <p>Card Number</p>
+                                            <input id="inpEwalletCardNum" type="text" placeholder="0911-222-3333" onkeypress= "return isNumberGcash(event)">
+                                            <i class="fa-solid fa-circle-exclamation fa-bounce input-alert14" style="color: #ce0303;"></i>
+                                    </div>
+                                    <div class="bankwallet-proceed-btn">
+                                        <button id="placeOrder" class="cart-placeorder-btn placeOrder" onclick="checkName()">Place Order</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="codPayment" class="COD-payment">
+                                <p>Contact Details</p>
+                                <input id="inpCodContact" type="text" placeholder="0911-222-3333" onkeypress= "return codContactNumber(event)">
+                                <i class="fa-solid fa-circle-exclamation fa-bounce input-alert7" style="color: #ce0303;"></i>
+                                <p>Place land mark</p>
+                                <input id="inpCodLandMark" class="inputText" type="text"  placeholder="Ex: Near water station" onkeyup="capitalizeAllInputs()">
+                                <i class="fa-solid fa-circle-exclamation fa-bounce input-alert8" style="color: #ce0303;"></i>
+                                <p>Care off person</p>
+                                <input id="inpCodCareOff" class="inputText" type="text" placeholder="Yushmirah Marquez" onkeyup="capitalizeAllInputs()">
+                                <i class="fa-solid fa-circle-exclamation fa-bounce input-alert9" style="color: #ce0303;"></i>
+                                <div class="cod-placeorder-btn">
+                                    <button id="codPlaceOrderBtn">Place Order</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-sum-all-product">
+                <button id="cartPay" class="cart-paynow-btn cartPay">Check Out</button>
+                <button id="cartPayMobile" class="cart-paynow-btn-mobile cartPayMobile">Check Out</button>
+                <p id="totaltxt" class="totaltxt">Total:</p>
+                <p class="cart-total-price" id="totalSum"></p>
+            </div>
+        </div>
+
+    </div>
+    </section>
+    <section class="notif-wrapper" id="notification">
+        <p>Added to cart</p>
+        <i class="fa-solid fa-arrow-turn-up fa-bounce"></i>
+    </section>
+    <section class="cart-itemduplicate-notif">
+        <div class="dupli-wrapper">
+            <div class="dupli-message">
+                <i class="fa-regular fa-circle-xmark"></i>
+                <p>This product is already on cart</p>
+            </div>
+        </div>
+    </section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
+
