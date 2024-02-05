@@ -1034,6 +1034,7 @@ html{
 }
 .cart-paypage-wrapper{
     display: none;
+    /* background-color: blue; */
 }
 .cart-popup-paypage{
     display: flex;

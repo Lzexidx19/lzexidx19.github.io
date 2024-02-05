@@ -466,26 +466,27 @@ $(".cart-items .bundles-content button").css({
     $("#payPageOncart").css({
       width : '100%',
       overflowY: 'auto',
-      height: '500px',
+      height: '235px',
       overflowX : 'hidden',
       paddingBottom : '25px'
     });
-    $(".oncart-paypage").animate({
-      width: '45%',
-    });
+    // $(".oncart-paypage").animate({
+    //   width: '45%',
+    // });
     $(".cart-popup-paypage").css({
       marginLeft : '0px'
     });
     $("#payPageOncart .bundles-content").css({
-      display : 'inline-block',
+      display : 'flex',
       width: '100%',
-      height : 'auto',
+      height : '100px',
       paddingTop : '0px',
       paddingBottom : '20px',
+      gap : '10px'
     });
     $("#payPageOncart .bundles-content .bundles-imgcon").css({
-      width : '100%',
-      height : '150px',
+      width : '50%',
+      height : '100px',
       margin : '10px auto',
       paddingBottom : '0px',
       boxShadow: 'rgba(0, 0, 0, 0.8) 0px 5px 15px'
@@ -495,7 +496,7 @@ $(".cart-items .bundles-content button").css({
       height : '100%',
     });
     $("#payPageOncart .bundles-content .bundles-deetscon").css({
-      marginTop : '20px',
+      marginTop : '10px',
       marginLeft : '10px',
       height : '100px',
       width : '90%',
@@ -525,14 +526,14 @@ $(".cart-items .bundles-content button").css({
         $("#payPageOncart").css({
           height: '100%',
           gap : '10px',
-          paddingBottom : '115px'
+          paddingBottom : '170px'
         }); 
         $(".cart-popup-content").css({
           height: '100%'
         });
-        $(".oncart-paypage").animate({
-          width: '100%',
-        });
+        // $(".oncart-paypage").animate({
+        //   width: '100%',
+        // });
         $("#payPageOncart .bundles-content").css({
           display : 'flex',
           flexDirection : 'row',
